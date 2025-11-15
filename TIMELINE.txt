@@ -1,0 +1,36 @@
+1. INSTALL A REACTJS FRAMEWORK AND SETUP 
+npm create vite@latest my-portfolio --template react
+cd my-portfolio
+npm install
+
+
+✅ 2. Install TailwindCSS
+
+Follow Tailwind setup:
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+3.
+Update tailwind.config.js:
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+4.
+Update src/index.css:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
